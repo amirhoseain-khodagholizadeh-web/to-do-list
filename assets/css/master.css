@@ -1,0 +1,151 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+
+    >.main {
+        border: 1px solid black;
+        width: fit-content;
+        padding: 20px;
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        >* {
+            width: 100%;
+        }
+
+        >h2 {
+            text-align: center;
+        }
+
+        >.input {
+            background-color: aqua;
+            display: flex;
+            position: relative;
+            height: 40px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 50px;
+            border-radius: 100px;
+            background: rgb(204, 204, 204);
+
+            >input {
+                width: 100%;
+                padding-left: 15px;
+                border-radius: 100px;
+                border: none;
+                background: rgb(204, 204, 204);
+                font-size: 15px;
+            }
+
+            >button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                border: none;
+                height: 50px;
+                width: 50px;
+                font-size: 40px;
+                background: green;
+                border-radius: 100px;
+            }
+
+
+        }
+
+        >.color {
+            width: 100%;
+            margin-top: -15px;
+            display: flex;
+            gap: 5px;
+            padding-left: 10px;
+
+            >span {
+                border-radius: 50px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                cursor: pointer;
+
+                &:nth-of-type(1) {
+                    background-color: red;
+                }
+
+                &:nth-of-type(2) {
+                    background-color: blue;
+                }
+
+                &:nth-of-type(3) {
+                    background-color: green;
+                }
+
+                &:nth-of-type(4) {
+                    background-color: orange;
+                }
+
+                &:nth-of-type(5) {
+                    background-color: yellow;
+                }
+
+                &:nth-of-type(6) {
+                    background-color: purple;
+                }
+
+                &:nth-of-type(7) {
+                    background-color: peru;
+                }
+
+                &:nth-of-type(8) {
+                    background-color: brown;
+                }
+            }
+        }
+
+        >ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            >* {
+                width: 100%;
+            }
+
+            >li {
+                display: flex;
+                border-radius: 10px;
+                border: 1px solid gray;
+                justify-content: space-between;
+                padding-block: 13px;
+                padding-inline: 5px;
+
+                >div {
+                    display: flex;
+                    gap: 15px;
+
+                    &:nth-of-type(1) {
+                        >p {}
+                    }
+
+                    &:nth-of-type(2) {
+                        >span {
+                            cursor: pointer;
+
+                            >i {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
